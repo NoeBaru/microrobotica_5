@@ -1,0 +1,6 @@
+NumPy libreria di Python
+
+basate su di esso:
+- pyTorch
+- Jax
+- mlx
