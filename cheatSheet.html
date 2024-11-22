@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet Python, NumPy & Matplotlib</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .column {
+            width: 10%;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            color: #2d2d2d;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            font-size: 18px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 15px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #e9f5ff;
+            border-left: 5px solid #007bff;
+            margin: 0px 0;
+            padding: 8px;
+            font-size: 14px;
+        }
+        li h3 {
+            margin: 0;
+            font-size: 15px;
+            color: #0056b3;
+        }
+        li p {
+            margin: 4px 0;
+            font-size: 13px;
+            color: #555;
+        }
+        li code {
+            font-family: Consolas, monospace;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cheat Sheet Python, NumPy & Matplotlib</h1>
+
+        <!-- Colonna 1: Funzioni Generali -->
+        <div class="column">
+            <h2>Funzioni Generali</h2>
+            <ul>
+                <li><h3>.items()</h3><p>Restituisce chiave e valore di un dizionario.</p><code>my_dict.items()</code></li>
+                <li><h3>random.choice()</h3><p>Ritorna un elemento casuale da una lista.</p><code>random.choice([1, 2, 3])</code></li>
+                <li><h3>.read()</h3><p>Legge il contenuto di un file.</p><code>with open('file.txt') as f: f.read()</code></li>
+            </ul>
+
+            <h2>NumPy</h2>
+            <ul>
+                <li><h3>.append()</h3><p>Aggiunge un elemento a un array.</p><code>np.append(arr, value)</code></li>
+                <li><h3>.arange()</h3><p>Crea un array con un range.</p><code>np.arange(0, 10, 2)</code></li>
+                <li><h3>.copy()</h3><p>Copia un array.</p><code>arr.copy()</code></li>
+                <li><h3>.cos()</h3><p>Calcola il coseno di ogni elemento.</p><code>np.cos(arr)</code></li>
+                <li><h3>.count_nonzero()</h3><p>Conta gli elementi non-zero.</p><code>np.count_nonzero(arr)</code></li>
+            </ul>
+        </div>
+
+        <!-- Colonna 2: Funzioni NumPy Parte 2 -->
+        <div class="column">
+            <ul>
+                <li><h3>.delete()</h3><p>Rimuove elementi da un array.</p><code>np.delete(arr, indici)</code></li>
+                <li><h3>.dtype</h3><p>Tipo di dati di un array.</p><code>arr.dtype</code></li>
+                <li><h3>.exp()</h3><p>Calcola l'esponenziale.</p><code>np.exp(arr)</code></li>
+                <li><h3>.float64</h3><p>Tipo decimale a 64 bit.</p><code>np.array([1], dtype=np.float64)</code></li>
+                <li><h3>.inf</h3><p>Rappresenta infinito.</p><code>np.inf</code></li>
+                <li><h3>.int64</h3><p>Tipo intero a 64 bit.</p><code>np.array([1], dtype=np.int64)</code></li>
+                <li><h3>.log()</h3><p>Logaritmo naturale.</p><code>np.log(arr)</code></li>
+                <li><h3>.logical_and()</h3><p>AND logico.</p><code>np.logical_and(arr1, arr2)</code></li>
+                <li><h3>.logical_not()</h3><p>NOT logico.</p><code>np.logical_not(arr)</code></li>
+                <li><h3>.mean()</h3><p>Media degli elementi.</p><code>np.mean(arr)</code></li>
+            </ul>
+        </div>
+
+        <!-- Colonna 3: Funzioni NumPy Parte 3 e Matplotlib -->
+        <div class="column">
+            <ul>
+                <li><h3>.min()</h3><p>Valore minimo.</p><code>np.min(arr)</code></li>
+                <li><h3>.max()</h3><p>Valore massimo.</p><code>np.max(arr)</code></li>
+                <li><h3>.ones()</h3><p>Crea un array di 1.</p><code>np.ones((2, 3))</code></li>
+                <li><h3>.pi</h3><p>Costante pi greco.</p><code>np.pi</code></li>
+                <li><h3>.random.uniform()</h3><p>Genera numeri casuali da distribuzione uniforme.</p><code>np.random.uniform(0, 1, size)</code></li>
+                <li><h3>.random.randint()</h3><p>Genera interi casuali.</p><code>np.random.randint(0, 10, size)</code></li>
+                <li><h3>.reshape()</h3><p>Cambia forma dell’array.</p><code>np.reshape(arr, (new_shape))</code></li>
+                <li><h3>.roll()</h3><p>Sposta elementi di un array.</p><code>np.roll(arr, shift)</code></li>
+                <li><h3>.round()</h3><p>Arrotonda elementi.</p><code>np.round(arr, decimals=2)</code></li>
+                <li><h3>.sum()</h3><p>Somma elementi.</p><code>np.sum(arr)</code></li>
+                <li><h3>.zeros()</h3><p>Crea un array di zeri.</p><code>np.zeros((2, 3))</code></li>
+            </ul>
+
+            <h2>Matplotlib</h2>
+            <ul>
+                <li><h3>.grid()</h3><p>Abilita/disabilita griglia.</p><code>plt.grid(True)</code></li>
+                <li><h3>.imread()</h3><p>Legge un'immagine.</p><code>img = plt.imread('image.png')</code></li>
+                <li><h3>.imshow()</h3><p>Mostra un’immagine.</p><code>plt.imshow(img)</code></li>
+                <li><h3>.legend()</h3><p>Aggiunge legenda.</p><code>plt.legend(['label1'])</code></li>
+                <li><h3>.linspace()</h3><p>Genera numeri in intervallo.</p><code>np.linspace(0, 1, num=5)</code></li>
+                <li><h3>.plot()</h3><p>Crea grafico a linee.</p><code>plt.plot(x, y)</code></li>
+                <li><h3>.set_title()</h3><p>Imposta il titolo.</p><code>plt.title('Titolo')</code></li>
+                <li><h3>.set_xlabel()</h3><p>Etichetta asse x.</p><code>plt.xlabel('Asse X')</code></li>
+                <li><h3>.set_ylabel()</h3><p>Etichetta asse y.</p><code>plt.ylabel('Asse Y')</code></li>
+                <li><h3>.set_ylim()</h3><p>Imposta limiti asse y.</p><code>plt.ylim(0, 10)</code></li>
+                <li><h3>.show()</h3><p>Mostra grafico.</p><code>plt.show()</code></li>
+                <li><h3>.subplots()</h3><p>Crea sotto-grafici.</p><code>fig, ax = plt.subplots()</code></li>
+                <li><h3>.savefig()</h3><p>Salva il grafico come immagine.</p><code>plt.savefig('grafico.png')</code></li>
+                <li><h3>.scatter()</h3><p>Crea un grafico a dispersione.</p><code>plt.scatter(x, y)</code></li>
+                <li><h3>.hist()</h3><p>Crea un istogramma.</p><code>plt.hist(data, bins=10)</code></li>
+                <li><h3>.bar()</h3><p>Crea un grafico a barre.</p><code>plt.bar(x, y)</code></li>
+                <li><h3>.fill_between()</h3><p>Riempie l'area tra le curve.</p><code>plt.fill_between(x, y1, y2)</code></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
