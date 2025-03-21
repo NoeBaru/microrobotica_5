@@ -1,0 +1,28 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Vendita Auto Usate</title>
+</head>
+<body>
+    <h1>Calcola il Prezzo della Tua Auto Usata</h1>
+    <form action="/prezzi" method="post">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required>
+        
+        <label for="modello">Modello:</label>
+        <input type="text" id="modello" name="modello" required>
+        
+        <label for="anno">Anno:</label>
+        <input type="number" id="anno" name="anno" required>
+        
+        <label for="chilometraggio">Chilometraggio:</label>
+        <input type="number" id="chilometraggio" name="chilometraggio" required>
+        
+        <button type="submit">Calcola Prezzo</button>
+    </form>
+</body>
+</html>

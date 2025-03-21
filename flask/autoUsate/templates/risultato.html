@@ -1,0 +1,15 @@
+<!-- templates/risultato.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Risultato Prezzo</title>
+</head>
+<body>
+    <h1>Prezzo Stimato della Tua Auto Usata</h1>
+    <p>Il prezzo stimato è: €{{ prezzo }}</p>
+    <a href="/">Torna indietro</a>
+</body>
+</html>
